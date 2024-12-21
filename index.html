@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="icon" href="assets/title.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>WeatherWise</title>
+  </head>
+  <body>
+    <div class="background-image">
+      <div class="content">
+        <div>
+          <header class="header">
+            <nav class="main-header">
+              <div class="header-content">
+                <div>
+                  <nav class="navbar navbar-expand-lg navbar-">
+                    <div class="container">
+                      <a
+                        class="navbar-brand d-flex align-items-center justify-content-center"
+                        href="#"
+                        ><img
+                          src="assets/cloudiness-1265205_1280.webp"
+                          alt="cloudiness"
+                          width="60px"
+                        />
+                        <span
+                          class="logo-name text-white fw-bold d-inline-block"
+                        >
+                          WeatherWise
+                        </span></a
+                      >
+                      <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                      >
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">News</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Live Cameras</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Photos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <main>
+            <div class="weather container my-5">
+              <div class="weather-main">
+                <!-- search -->
+                <section
+                  class="search row text-center align-items-center justify-content-center my-5 mx-3"
+                >
+                  <div class="search col-md-6 col-sm-12 col-12">
+                    <input
+                      type="search"
+                      class="form-control search-item text-white px-3"
+                      placeholder="Enter City Name......"
+                    />
+                  </div>
+                </section>
+
+                <!-- content -->
+                <section
+                  class="weather-content row align-items-center justify-content-center gy-4 my-5"
+                >
+                  <div class="col-md-4 col-sm-12 col-9 p-0">
+                    <div
+                      class="inner today d-flex flex-column justify-content-between rounded-start-2 p-4"
+                    >
+                      <div
+                        class="date d-flex align-items-center justify-content-between p-2 rounded-2 mb-3"
+                      >
+                        <span class="day">Thursday</span>
+                        <span class="month"> 21November</span>
+                      </div>
+                      <div class="wether-data my-3">
+                        <h3 class="text-capitalize h2" id="county-name"></h3>
+                        <p class="symbol">
+                          <img
+                            src="assets/113.webp"
+                            alt="tempreture discrition icon"
+                            id="symbol-icon-main"
+                          />
+                        </p>
+                        <h1 id="degree-main">23.3 <span>°C</span></h1>
+                        <span class="state text-capitalize" id="main-state"
+                          >sunny</span
+                        >
+                      </div>
+                      <div
+                        class="Accessories d-flex align-items-md-center justify-content-lg-between flex-wrap justify-content-center px-2"
+                      >
+                        <span
+                          class="icon d-flex align-items-center justify-content-center"
+                          id="humitity"
+                          ><img
+                            src="assets/icon-umberella.png"
+                            alt="icon-umberella"
+                            class="mx-1"
+                          />
+
+                          20 %
+                        </span>
+                        <span
+                          class="icon mx-lg-2 mx-md-1 d-flex align-items-center justify-content-center"
+                          id="wind-speed"
+                          ><img
+                            src="assets/icon-wind.png"
+                            alt="icon-wind"
+                            class="mx-1"
+                          />
+                          18km/h</span
+                        >
+                        <span
+                          class="icon text-capitalize d-flex align-items-center justify-content-center"
+                          id="wind-dir"
+                          ><img
+                            src="assets/icon-compass.png"
+                            alt="icon-compass"
+                            class="mx-1"
+                          />
+                          east</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-12 col-9 p-0">
+                    <div
+                      class="inner next-day d-flex flex-column justify-content-between text-center p-4"
+                    >
+                      <div
+                        class="date d-flex align-items-center justify-content-between p-2 rounded-2 mb-3"
+                      >
+                        <span class="day">Thursday</span>
+                        <span class="month"> 21November</span>
+                      </div>
+                      <div class="wether-data my-3">
+                        <h3 class="text-capitalize h2 invisible">cairo</h3>
+                        <p class="symbol mb-4">
+                          <img
+                            src="assets/113.webp"
+                            alt=""
+                            class="symbol-icon"
+                          />
+                        </p>
+                        <h2 class="mb-4 degree">23.3 <span>°C</span></h2>
+                        <span class="state text-capitalize">sunny</span>
+                      </div>
+                      <div
+                        class="Accessories d-flex align-items-md-center justify-content-lg-between flex-wrap justify-content-center px-2"
+                      >
+                        <span
+                          class="icon humitity d-flex align-items-center justify-content-center"
+                          ><img
+                            src="assets/icon-umberella.png"
+                            alt="icon-umberella"
+                            class="mx-1"
+                          />
+                          20 %</span
+                        >
+                        <span
+                          class="icon mx-lg-2 mx-md-1 wind-speed d-flex align-items-center justify-content-center"
+                          ><img
+                            src="assets/icon-wind.png"
+                            alt="icon-wind"
+                            class="mx-1"
+                          />18km/h</span
+                        >
+                        <span
+                          class="icon text-capitalize wind-dir d-flex align-items-center justify-content-center"
+                          ><img
+                            src="assets/icon-compass.png"
+                            alt="icon-compass"
+                            class="mx-1"
+                          />
+                          east</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-12 col-9 p-0">
+                    <div
+                      class="inner next-day day-2 d-flex flex-column justify-content-between text-center rounded-end-2 p-4"
+                    >
+                      <div
+                        class="date d-flex align-items-center justify-content-between p-2 rounded-2 mb-3"
+                      >
+                        <span class="day">Thursday</span>
+                        <span class="month"> 21November</span>
+                      </div>
+                      <div class="wether-data my-3">
+                        <h3 class="text-capitalize h2 invisible">cairo</h3>
+                        <p class="symbol mb-4">
+                          <img
+                            src="assets/113.webp"
+                            alt=""
+                            class="symbol-icon"
+                          />
+                        </p>
+                        <h2 class="mb-4 degree">23.3 <span>°C</span></h2>
+                        <span class="state text-capitalize">sunny</span>
+                      </div>
+                      <div
+                        class="Accessories d-flex align-items-md-center justify-content-lg-between flex-wrap justify-content-center px-2"
+                      >
+                        <span
+                          class="icon humitity d-flex align-items-center justify-content-center"
+                          ><img
+                            src="assets/icon-umberella.png"
+                            alt="icon-umberella"
+                            class="mx-1"
+                          />
+                          20 %</span
+                        >
+                        <span
+                          class="icon mx-lg-2 mx-md-1 wind-speed d-flex align-items-center justify-content-center"
+                          ><img
+                            src="assets/icon-wind.png"
+                            alt="icon-wind"
+                            class="mx-1"
+                          />18km/h</span
+                        >
+                        <span
+                          class="icon text-capitalize wind-dir d-flex align-items-center justify-content-center"
+                          ><img
+                            src="assets/icon-compass.png"
+                            alt="icon-compass"
+                            class="mx-1"
+                          />
+                          east</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer py-5">
+      <div class="container py-5">
+        <div
+          class="footer-content row gy-3 d-flex align-items-center justify-content-center"
+        >
+          <div class="col-md-6 col-sm-12 col-12">
+            <div class="subscribe position-relative">
+              <input
+                type="text"
+                class="form-control sub-input p-2 rounded-5"
+                placeholder="Enter email to subscribe...."
+              />
+              <span
+                class="text-capitalize rounded-5 sub-btn mx-1 text-white"
+                role="button"
+              >
+                subscribe</span
+              >
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div
+              class="social text-center d-flex align-items-center justify-content-center"
+            >
+              <a> <i class="fa-brands fa-facebook-f"></i> </a>
+
+              <a><i class="fa-brands fa-square-instagram"></i></a>
+              <a><i class="fa-brands fa-pinterest-p"></i></a>
+              <a><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-white my-5">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
